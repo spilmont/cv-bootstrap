@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> <!-- codage de la table de charactere-->
-    <title>cv-bootstrap</title> <!-- titre de la page web (celui de l'onglet -->
+    <title>cv-bootstrap</title> <!-- titre de la page web (celui de l'onglet) -->
 
     <link rel="stylesheet" href="bootstrap.css"> <!-- permet a la page web de lire la feuille de style  "bootstrap.css" -->
     <link rel="stylesheet" href="cv-bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- permet un affichage optimal quelle que soit le type ecran (ordi, smartphone...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- permet un affichage optimal quelles que soient le type ecran (ordi, smartphone...) -->
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-sm-2" id="col-left"> <!-- colone des cordonnées et liens url (gauche) -->
+        <div class="col-sm-2" id="col-left"> <!-- colone des coordonnées et liens url (gauche) -->
             <p>
                 <span >André Spilmont</span><br> <!-- <span> permet de selectionner seulement mon nom et prenom  pour le mettre en grans dans mon css-->
                 13/11/1987<br>
@@ -26,7 +26,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-sm-8"> <!-- colone des information general (milleux) -->
+        <div class="col-sm-8"> <!-- colone des informations generales (milleux) -->
             <div class="row">
 
                 <div class="col-sm-12 text-center">
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-sm-12 margin">
                     <div id="invisible" style="display: block">
-                        <ul> <!-- liste non ordonné de mes different experience professionelle -->
+                        <ul> <!-- liste non ordonné de mes differentes experiences professionelles -->
                             <li>2018: apprenant Developpeur Web Grande ecole du numerique Fourmies</li>
                             <li>2016-2018: Ouvrier du batiment polivalent (chantier d'insertion) CCAS Fourmies</li> <!-- <li> permet de rajouter un element a ma liste -->
                             <li> 2017: Technicien de maintenance Informatique stagiaire TEMIR IRFORMATIQUE Fourmies</li>
@@ -95,7 +95,7 @@
 
                     <FORM action="mailto:dd_spilmont@hotmail.fr"> <!-- formulaire de message ( a completer quiand on airas vu la partis PHP en attendant  envoie lutilisateur sur mon email ) -->
 
-                        <fieldset>  <!-- englobe le formulaire -->
+                        <fieldset>
 
                             <legend>message</legend>
                             <div class="row" id="div-nom">
@@ -111,11 +111,11 @@
                                 <input type="email" name="email" id="email" required> <!-- champs permetant de rentrer un email -->
                             </div>
                             <div class="row">
-                                <label for="messages">votre message:</label> <!-- champs permettant de rentrer un message de grande taille comme un  message ou un commentaire-->
+                                <label for="messages">votre message:</label> <!-- champs permettant de rentrer un message de grande taille comme  un commentaire-->
                                 <textarea name="message" id="messages"></textarea>
                             </div>
-                            <INPUT TYPE=SUBMIT VALUE=Envoyer class="btn btn-primary boutton" > <!-- creer un bouton envoye -->
-                            <INPUT TYPE=RESET VALUE=Effacer class="btn btn-primary boutton"> <!-- creer un boutton qui efface le contenue des champs du formulaire -->
+                            <INPUT TYPE=SUBMIT VALUE=Envoyer class="btn btn-primary boutton" > <!-- creer un bouton envoyer -->
+                            <INPUT TYPE=RESET VALUE=Effacer class="btn btn-primary boutton"> <!-- creer un boutton qui efface le contenu des champs du formulaire -->
                         </fieldset>
 
                     </FORM>

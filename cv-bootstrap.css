@@ -2,17 +2,17 @@
     background-color: #17a2b8 /* change la couleur de fond de la div ayant comme ID col-left */
 }
 
-span{ /* le changement ce produit sur tout les span de la page */
+span{ /* le changement ce produit sur tout les spans de la page web */
     font-size: 1.3em;  /* change la taille de la police */
-    font-weight: bold;  /* met "en gras */
+    font-weight: bold;  /* met en gras */
 }
 
 p{
-    color: white; /* change la couleur de    tout les <p> de la page HTML */
+    color: white; /* change la couleur de tout les <p> de la page HTML */
 }
 
 
-/* positionne les different element sur la page web */
+/* positionne les differents elements sur la page web */
 h1 {
     margin-bottom: 15%;
 }
@@ -43,6 +43,6 @@ li{
 }
 
 
-.boutton{  /* les changements ce produit sur tout les div ayant la class boutton*/
+.boutton{  /* les changements ce produit sur tout les divs ayant la class boutton*/
     margin-top: 10%;
 }

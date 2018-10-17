@@ -1,4 +1,4 @@
-/*fonction permetant de caché le contenu  l'experience professionelle*/
+/*fonction permetant de caché le contenu  des experiences professionelles*/
 function hidenExpPro(){
 
     /* si la div invisible est caché la montré ... sinon la laisser caché */
