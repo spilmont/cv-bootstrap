@@ -1,0 +1,135 @@
+<!DOCTYPE html> <!-- permet de faire comprendre au navigateur que c'est une page html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- codage de la table de charactere-->
+    <title>cv-bootstrap</title> <!-- titre de la page web (celui de l'onglet -->
+
+    <link rel="stylesheet" href="bootstrap.css"> <!-- permet a la page web de lire la feuille de style  "bootstrap.css" -->
+    <link rel="stylesheet" href="cv-bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- permet un affichage optimal quelle que soit le type ecran (ordi, smartphone...) -->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2" id="col-left"> <!-- colone des cordonnées et liens url (gauche) -->
+            <p>
+                <span >André Spilmont</span><br> <!-- <span> permet de selectionner seulement mon nom et prenom  pour le mettre en grans dans mon css-->
+                13/11/1987<br>
+                1 Impasse Martin<br>
+                59212 wignehies<br>
+                tel: 07/84/68/47/02<br>
+                dd_spilmont@hotmail.fr
+            </p>
+            <div class="row" id="lien">
+                <a href="https://github.com/spilmont" target="_blank" title="Github.com"> <!-- envoye l'utilisateur sur ma page github.com-->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/500px-Octicons-mark-github.svg.png" width="100px"> <!-- image clicable envoyant sur le lien de la ligne de audessus -->
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-8"> <!-- colone des information general (milleux) -->
+            <div class="row">
+
+                <div class="col-sm-12 text-center">
+
+                    <h1>Developeur web</h1>
+                    <div class="col-sm-2">
+                        <button type="button" onclick="hidenExpPro();" class="btn btn-primary">-</button> <!-- bonton fonction hidenExpPro()  du js -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>EXPERIENCES PROFFESSIONELLES</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 margin">
+                    <div id="invisible" style="display: block">
+                        <ul> <!-- liste non ordonné de mes different experience professionelle -->
+                            <li>2018: apprenant Developpeur Web Grande ecole du numerique Fourmies</li>
+                            <li>2016-2018: Ouvrier du batiment polivalent (chantier d'insertion) CCAS Fourmies</li> <!-- <li> permet de rajouter un element a ma liste -->
+                            <li> 2017: Technicien de maintenance Informatique stagiaire TEMIR IRFORMATIQUE Fourmies</li>
+                            <li> 2016: Ouvrirer du batiment polivalent Stagiaire Bruyere Imobilier Fourmies</li>
+                            <li>2014: Manutensuinnaire Materne Boué</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-sm-center">
+                    <div class="col-sm-2">
+                        <button type="button" onclick="hidenDiplome();" class="btn btn-primary">-</button> <!-- bonton fonction  hidenDiplome() du js -->
+                    </div>
+                    <h2>DIPLOMES</h2>
+
+                </div>
+                <div class="col-sm-12 margin">
+                    <div id="invisible2" style="display: block">
+                        <ul>
+                            <li>2012: BTS Assistant Technique de l'Ingenieur</li>
+                            <li>2010: Bac STI Genie Electrotechnique</li>
+                            <li>2007: BEP metier de l'electricite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-sm-center">
+                    <div class="col-sm-2">
+                        <button type="button" onclick="hidenCompetence();" class="btn btn-primary">-</button> <!-- bonton fonction hidenCompetence()  du js -->
+                    </div>
+                    <h2>COMPETENCES</h2>
+
+                </div>
+                <div class="col-sm-12 margin">
+                    <div id="invisible3" style="display: block">
+                        <ul>
+                            <li>utilisation des langage HTML CSS JAVASCRIPT</li>
+                            <li>utilisation de GIT/GIThub</li>
+                            <li>utilisation de BOOTSTRAP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3" id="message">
+
+                    <FORM action="mailto:dd_spilmont@hotmail.fr"> <!-- formulaire de message ( a completer quiand on airas vu la partis PHP en attendant  envoie lutilisateur sur mon email ) -->
+
+                        <fieldset>  <!-- englobe le formulaire -->
+
+                            <legend>message</legend>
+                            <div class="row" id="div-nom">
+                                <label for="nom"> nom:</label>
+                                <input type="text" name="nom" id="nom" required> <!--  champs du formulaire permetant de saisir du texte -->
+                            </div>
+                            <div class="row">
+                                <label for="prenom"> prenom:</label>
+                                <input type="text" name="prenom" id="prenom" required> <!-- required rend obligatoire  le champs -->
+                            </div>
+                            <div class="row">
+                                <label for="email">email: </label>
+                                <input type="email" name="email" id="email" required> <!-- champs permetant de rentrer un email -->
+                            </div>
+                            <div class="row">
+                                <label for="messages">votre message:</label> <!-- champs permettant de rentrer un message de grande taille comme un  message ou un commentaire-->
+                                <textarea name="message" id="messages"></textarea>
+                            </div>
+                            <INPUT TYPE=SUBMIT VALUE=Envoyer class="btn btn-primary boutton" > <!-- creer un bouton envoye -->
+                            <INPUT TYPE=RESET VALUE=Effacer class="btn btn-primary boutton"> <!-- creer un boutton qui efface le contenue des champs du formulaire -->
+                        </fieldset>
+
+                    </FORM>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-sm-2"> <!-- colone de la photo (droite) -->
+            <img src="moi.jpg" alt="moi" class="img-thumbnail" >
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="cv-bootstrap.js"></script> <!-- permet a la page web de lire le fichier javascript " cv-bootstrap.js"-->
+</body>
+</html>
